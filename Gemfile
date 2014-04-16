@@ -2,16 +2,23 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
+gem 'bootstrap-sass'
+gem 'sprockets'
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '3.0.0.beta2'
+  gem 'guard-rspec'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'capybara'
+  gem 'libnotify'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 # Use SCSS for stylesheets
